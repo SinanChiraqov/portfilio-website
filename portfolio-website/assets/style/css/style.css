@@ -99,7 +99,24 @@ body header nav .container .navigation__bar .navigation {
 }
 body .slider__wrapper {
   width: 100%;
+  position: relative;
   background: rgb(38, 60, 151);
+}
+body .slider__wrapper .slider__btn {
+  background: transparent;
+  border: none;
+  position: absolute;
+  font-size: 3rem;
+  color: #eee;
+}
+body .slider__wrapper .slider__btn.right__button {
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+body .slider__wrapper .slider__btn.left__button {
+  top: 50%;
+  transform: translate(50%, -50%);
 }
 body .slider__wrapper .container .slider__body {
   padding: 8rem;
@@ -144,4 +161,24 @@ body main .shopify .container .shopify__options .option i {
   color: #fcbe00;
   padding: 1rem;
   font-size: 2rem;
+}
+body main .banner .container .banner__options {
+  display: flex;
+  justify-content: space-around;
+}
+body main .banner .container .banner__options .banner__option {
+  background: url("../../images/banner1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #eee;
+  overflow: hidden;
+  border-radius: 3px;
+}
+body main .banner .container .banner__options .banner__option .banner__option__hover {
+  padding: 2rem 4rem;
+}
+body main .banner .container .banner__options .banner__option:hover .banner__option__hover {
+  padding: 2rem 4rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 1s;
 }/*# sourceMappingURL=style.css.map */
